@@ -454,7 +454,6 @@ CREATE TABLE sample_data (
 ====================================================================
 13. MISCELLANEOUS PYTHON TOOLS & TRICKS
 --------------------------------------------------------------------
-```python
 # OS & Path
 import os
 from pathlib import Path
@@ -523,7 +522,6 @@ b = arr + 5
 ====================================================================
 14. DATA ANALYSIS UTILITIES
 --------------------------------------------------------------------
-```python
 import pandas as pd
 import numpy as np
 
@@ -603,4 +601,4 @@ df_text['Name_upper'] = df_text['Name'].str.upper()  # vectorized string op
 # --------------------------------------------------
 def zscore(x): return (x - x.mean())/x.std()
 df['Yield_z'] = df.groupby('Ticker')['Yield'].transform(zscore)
-```
+
